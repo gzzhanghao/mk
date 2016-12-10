@@ -60,9 +60,9 @@ export async function build(args) {
     babel src -d tmp
     browserify tmp/index.js -o dest/bundle.js
   `)
-  await Promise.all([
-    x('uglifyjs --compress --mangle -- dest/index.js > dest/bundle.min.js'),
-    x('rm -rf tmp'),
+  await x([
+    'rm -rf tmp',
+    'uglifyjs --compress --mangle -- dest/index.js > dest/bundle.min.js',
   ])
 }
 ```
