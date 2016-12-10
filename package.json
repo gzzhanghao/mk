@@ -1,0 +1,30 @@
+{
+  "name": "@gzzhanghao/mk",
+  "version": "0.1.0",
+  "description": "Make in node",
+  "main": "index.js",
+  "bin": {
+    "mk": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "chalk": "^1.1.3",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzzhanghao/mk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gzzhanghao/mk/issues"
+  },
+  "homepage": "https://github.com/gzzhanghao/mk#readme"
+}
